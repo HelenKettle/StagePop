@@ -1,0 +1,83 @@
+
+INSTALLING
+----------
+
+The package requires the following R packages to work:
+
+* deSolve 
+* PBSddesolve
+
+To install the above packages, use install.packages() in R.
+
+Then, asssuming you have a the latest stagePop binary package for your
+platform, you may install this from within R by using the command
+
+  install.packages(PACKAGE_FILENAME,repos=NULL)
+
+where PACKAGE_FILENAME is the full path to and filename of the binary package
+you have. For example:
+
+  install.packages("/tmp/stagePop_1.0-1_R_x86_64-redhat-linux-gnu.tar.gz",repos=NULL)
+
+If you do not have a binary package, see the next section.
+
+BUILDING/INSTALLING
+-------------------
+
+To build this package you will need the following R packages installed in
+addition to the installation prerequisites above:
+
+* roxygen2
+
+On Windows, you will also need the MinGW MSYS environment to provide
+appropriate build tools. 
+
+Then, to actually create the package:
+
+1. Open a command prompt (in Windows use MSYS rather than cmd.exe) and set
+   working directory to the directory containing this file. 
+
+2. Run "make doc" to build the documentation files
+
+3. Run "make build" to create a source distribution
+
+4. Run "make dist" to create an installable binary distribution. 
+  
+   NOTE: at the end of this process the name of the binary package you
+   have built will be output, along with installation instructions. 
+
+5. (optional) Run "make check" to perform standard R checks on the package
+
+
+To install the package you have just built:
+
+1. While still in the same working directory, start R. 
+
+2. Run  
+
+   install.packages("THE_PACKAGE_FILENAME",repos=NULL)
+
+   where THE_PACKAGE_FILENAME is the filename generated in step 4
+   above. 
+
+3. Attach the package with
+
+   library(stagePop)
+
+You can then run examples as described below.
+
+EXAMPLES
+--------
+
+The stagePop package contains a number of executable examples. To run these, use the function
+
+  runStagePopExample('example_name') 
+
+in an R session with the package attached.
+
+To get a list of example names, run the function without arguments, e.g:
+
+  runStagePopExample() 
+
+
+
