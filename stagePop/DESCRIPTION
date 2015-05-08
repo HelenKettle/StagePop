@@ -2,13 +2,14 @@ Package: stagePop
 Type: Package
 Title: Modelling the Population Dynamics of a Stage-Structured Species in
     Continuous Time
-Version: 1.0-1
+Version: 1.1-1
 Date: 2015-02-03
 Author: Helen Kettle
 Maintainer: David Nutter <david.nutter@bioss.ac.uk>
 Description: Provides facilities to implement and run population models of
     stage-structured species...
 NeedsCompilation: no
+URL: https://github.com/HelenKettle/StagePop
 Suggests:
     R.rsp
 VignetteBuilder: R.rsp

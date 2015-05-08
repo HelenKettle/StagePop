@@ -28,6 +28,7 @@ To build this package you will need the following R packages installed in
 addition to the installation prerequisites above:
 
 * roxygen2
+* R.rsp
 
 On Windows, you will also need the MinGW MSYS environment to provide
 appropriate build tools. 
