@@ -3,7 +3,7 @@ Type: Package
 Title: Modelling the Population Dynamics of a Stage-Structured Species in
     Continuous Time
 Version: 1.1-1
-Date: 2015-02-03
+Date: 2015-05-12
 Author: Helen Kettle
 Maintainer: David Nutter <david.nutter@bioss.ac.uk>
 Description: Provides facilities to implement and run population models of
